@@ -1,0 +1,173 @@
+/* HAMBURGER */
+.menu-toggle{
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* MOBILE MENU */
+@media (max-width: 768px){
+
+    .menu-toggle{
+        display: block;
+    }
+
+    nav{
+        width: 100%;
+        display: none;
+    }
+
+    nav.active{
+        display: block;
+    }
+
+    .nav-link{
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-link li{
+        display: block;
+        margin: 15px 0;
+    }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: burlywood;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+/* HEADER */
+.header{
+    background-color: rgba(247, 193, 105, 0.9);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2{
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.nav-link{
+    list-style: none;
+}
+
+.nav-link li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav-link a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    transition: color 0.3s;
+}
+
+.nav-link a:hover{
+    color: aqua;
+}
+
+/* HERO SECTION */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 8%;
+}
+
+.info{
+    max-width: 600px;
+}
+
+.info h2{
+    font-size: 40px;
+    color: rgb(48, 41, 41);
+}
+
+.info span{
+    color: rgb(104, 17, 185);
+}
+
+.info h1{
+    font-size: 60px;
+    margin: 15px 0;
+}
+
+.info h3{
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+/* BUTTON */
+.btn{
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover{
+    background-color: red;
+}
+
+/* ICON */
+.icon{
+    margin-top: 20px;
+}
+
+.icon a{
+    font-size: 28px;
+    color: black;
+}
+
+.icon a:hover{
+    color: blue;
+}
+
+/* IMAGE */
+.image img{
+    height: 300px;
+    width: 300px;
+    border-radius: 40px;
+    border: 4px solid burlywood;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+    .header{
+        flex-direction: column;
+    }
+
+    .nav-link li{
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info h1{
+        font-size: 36px;
+    }
+
+    .image img{
+        margin-top: 30px;
+    }
+}

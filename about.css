@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: burlywood;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header */
+.header {
+    background-color: rgba(247, 193, 105, 0.767);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.7);
+    transition: color 0.5s;
+}
+
+.header h2:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.nav-link a:hover{
+    color: aqua;
+}
+.nav-link {
+    list-style: none;
+}
+
+.nav-link li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+
+/* Introduction */
+.introduction {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.introduction h2 {
+    margin-bottom: 10px;
+}
+
+.introduction span {
+    font-weight: bold;
+}
+
+.introduction p {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* Education */
+.education {
+    margin-top: 30px;
+}
+
+.education h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.education ul {
+    margin-left: 20%;
+    font-size: 18px;
+}
+
+.education ul ul {
+    margin-left: 20px;
+}
+
+/* Skills */
+h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.box {
+    border: 1px solid rgb(206, 142, 60);
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+.box:hover {
+    transform: translateX(10px);
+    cursor: pointer;
+}
+
+/* Certificate */
+.certificate {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.certificate p {
+    display: inline-block;
+    border: 1px solid rgba(224, 136, 20, 0.7);
+    border-radius: 25px;
+    padding: 15px 25px;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .education ul {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .nav-link li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+}
